@@ -1,7 +1,8 @@
 # Requerimientos
 
+- La Coordinadora y Matrona debe iniciar sesión
 - La Coordinadora debe ser capaz de ingresar y modificar articulos en el inventario
-- La Matrona debe ser capaz de asignar equipos
+- La Matrona debe ser capaz de asignar cupos a los equipos
 - La Matrona debe ser capaz de asignar un estado al equipo
 - La Coordinadora debe ser capaz de generar un informe de los equipos
 
@@ -10,7 +11,34 @@
 
 # Casos de Usos
 
-Ingresar articulos al inventario.
+### Inicio de sesión
+
+ID Caso: IS-001
+Nombre: Inicio de sesión
+Creado por: Maickol Reyes
+Fecha Creación: 12:03 AM
+Actores: Coordinadora, Matrona
+Descripción: 
+
+PreCondiciones:
+  1. Coordinadora dentro del recinto.
+  2. Computador con conexión a internet.
+
+PostCondiciones:
+  1. Ventana de finalización de inicio de sesión.
+  2. Se abre la hoja de inventario.
+
+Flujo Normal:
+  1. 
+
+Flujo Alternativo:
+
+
+Excepciones:
+
+
+
+### Ingresar articulos al inventario.
 
 
 ID Caso: IN-001
@@ -23,8 +51,26 @@ Descripción: Proceso el cual la Coordinadora ingresa articulos al sistema de fo
 PreCondiciones:
   1. Coordinadora dentro del recinto.
   2. Computador con conexión a internet.
+  3. Coordinadora debe tener la sesión iniciada
 
 PostCondiciones:
   1. Ventana emergente con mensaje de finalizacion
   2. Ventana con vista previa de articulos agregados recientemente
 
+Flujo Normal:
+
+1. La Coordinadora ingresa el Identificador del equipo.
+2. El sistema verifica la exitencia del identificador del artículo.
+3. El sistema solicita los datos del equipo (Nombre, Descripción, Estado, Lugar, Fecha Mantención, Condición).
+4. El sistema valida los datos ingresados
+5. El sistema registra los datos del equipo en una ficha para el inventario, y se añade a la lista de equipos.
+6. La Coordinadora recibe una vista previa de los artículos añadidos recientemente.
+
+Flujo Alternativo:
+
+1. Para el paso 3, si el articulo existe, se entra a la ventana de modificación del equipo
+
+Excepciones:
+
+   1. Para el paso 3, el sistema no deja colocar fechas de mantencion menores a la fecha actual.
+   2. Para el paso 4, si los datos estan mal ingresados, se advierte con un mensaje o icono en el campo donde esta el dato inválido.
