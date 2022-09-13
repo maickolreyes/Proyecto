@@ -18,3 +18,5 @@
 4. [Asignar Cupos a equipos](./CU04.MD)
 5. [Asignar estado al equipo](./CU05.MD)
 6. [Generar Informe semanal de equipos](./CU06.MD)
+
+[Inicio](../README.md)
