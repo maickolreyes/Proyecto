@@ -18,7 +18,7 @@ Estas funciones las definimos en los [Requerimientos](./documents/Requerimientos
 
 También, se elaboró un [Diagrama](./img/Diagrama%20Casos%20de%20Uso.png) enfocando estos puntos definidos.
 
-Además, se crearon una serie de [bocetos]() con los cuales funcionaria la página.
+Además, se crearon una serie de [bocetos](./documents/Requerimientos.md) con los cuales funcionaria la página.
 
 Adiconalmente se confeccionó un [Modelo Entidad Relación]()
 
